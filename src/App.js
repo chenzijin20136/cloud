@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Counter from './Counter';
 
 class App extends Component {
-  state = {
-    num: 1,
-    val: 0,
-  }
-
   render() {
-    return <div>{this.state.num}</div>
+    return (
+      <Fragment>
+        <Counter name="First" />
+        <Counter name="Second" />
+        <Counter name="Third" />
+      </Fragment>
+    );
   }
 }
 
